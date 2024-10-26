@@ -13,3 +13,6 @@ JS Back-End old exam task @SoftUni
 
 4. Add Create page
   - add items controller and render Create view; 
+  - add Item model;
+  - add post action on create;
+    - add item service;
