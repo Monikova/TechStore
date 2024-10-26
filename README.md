@@ -6,7 +6,10 @@ JS Back-End old exam task @SoftUni
   - main layout with dynamic navigation; 
   - change db name;
   - fix css;
-  - login view;
+  - Login and static Home view;
   - add dynamic page title through constants;
-  - register and 404 view;
+  - Register and 404 view;
 3. Adjust user model, user controller and user service
+
+4. Add Create page
+  - add items controller and render Create view; 
