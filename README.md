@@ -6,3 +6,4 @@ JS Back-End old exam task @SoftUni
   - main layout with dynamic navigation; 
   - change db name;
   - fix css;
+  - add dynamic page title through constants;
