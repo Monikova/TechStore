@@ -6,48 +6,51 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{title}}</title>
-    <link rel="stylesheet" href="/static/css/styles.css">
+    {{!-- <link rel="stylesheet" href="/static/css/styles.css"> --}}
+    <link rel="stylesheet" href="/styles/styles.css">
 </head>
 
 <body>
-    <header class="header">
-        <nav>
-            <img src="/static/images/logo.avif" class="logo">
-            <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="/search">Search</a></li>
-                <li><a href="/volcanoes">All Volcanoes</a></li>
-                <li><a href="/create">Create Volcano Wiki</a></li>
-                {{#if isAuthenticated}}
-                <li><a href="/logout">Logout</a></li>
-                {{else}}
-                <li><a href="/login">Login</a></li>
-                <li><a href="/register">Register</a></li>
-                {{/if}}
-            </ul>
-        </nav>
+    <header>
+        <div class="container">
+            <h1>TechStore</h1>
+            <nav>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/catalog">Catalog</a></li>
+                    <li><a href="#">About</a></li>
+                    {{#if isAuthenticated}}
+                    <li><a href="/profile">Profile</a></li>
+                    <li><a href="/create">Create Offer</a></li>
+                    <li><a href="/logout">Logout</a></li>
+                    {{else}}
+                    <li><a href="/login">Login</a></li>
+                    <li><a href="/register">Register</a></li>
+                    {{/if}}
+                </ul>
+            </nav>
+        </div>
     </header>
         
-    <main>
-        <!-- In case of error, you should display div with class "errorContainer" -->
-        <!-- You can choose to display the first error or all of them (error message/s in your opinion) -->
-        {{#if error}}
-        <div>
-            <div class="errorContainer">
-                <p>{{error}}</p>
-            </div>
+    <!-- In case of error, you should display div with class "errorContainer" -->
+    <!-- You can choose to display the first error or all of them (error message/s in your opinion) -->
+    {{#if error}}
+    <div>
+        <div class="errorContainer">
+            <p>{{error}}</p>
         </div>
-        {{/if}}
+    </div>
+    {{/if}}
 
 
     {{{body}}}
 
-    </main>
         
     <footer>
-        <p>&copy JS Back-End 2024</p>
+        <div class="container">
+            <p>&copy; 2024 TechStore. All rights reserved.</p>
+        </div>
     </footer>
-
 </body>
 
 </html>

@@ -14,7 +14,7 @@ handlebarsInit(app);
 
 const PORT = process.env.PORT;
 
-app.use('/static', express.static('src/public'));
+app.use('/styles', express.static('src/public/css'));
 app.use(express.urlencoded({extended: false}));
 app.use(cookieParser());
 app.use(userAuthMiddleware);
