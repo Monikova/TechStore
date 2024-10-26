@@ -6,6 +6,9 @@ const itemService = {
     }, 
     getAll() {
         return Item.find();
+    }, 
+    getOne(itemId) {
+        return Item.findById(itemId);
     }
 }; 
 

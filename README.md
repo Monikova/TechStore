@@ -17,3 +17,5 @@ JS Back-End old exam task @SoftUni
   - add post action on create;
     - add item service;
 5. Add catalog page
+6. Add details page 
+  - render details page; 
