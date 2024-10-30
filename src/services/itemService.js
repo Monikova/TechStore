@@ -9,7 +9,7 @@ const itemService = {
     }, 
     getOne(itemId) {
         return Item.findById(itemId);
-    }
+    }, 
 }; 
 
 export default itemService;

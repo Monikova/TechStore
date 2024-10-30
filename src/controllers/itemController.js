@@ -30,7 +30,8 @@ itemController.get('/catalog', async (req, res) => {
 
 itemController.get('/catalog/:itemId/details', async (req, res) => {
     const item = await itemService.getOne(req.params.itemId).lean();
-    res.render('details', {title: DETAILS_TITLE, item});
+    const isOwner = item.owner.toString() === req.user?._id;
+    res.render('details', {title: DETAILS_TITLE, item, isOwner});
 })
 
 export default itemController;

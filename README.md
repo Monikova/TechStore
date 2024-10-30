@@ -19,3 +19,5 @@ JS Back-End old exam task @SoftUni
 5. Add catalog page
 6. Add details page 
   - render details page; 
+
+7. Render home page with last three items from db;
